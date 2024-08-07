@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TylerDM.StandardLibrary.Blazor.Tests", "TylerDM.StandardLibrary.Blazor.Tests\TylerDM.StandardLibrary.Blazor.Tests.csproj", "{483F49F3-12E0-4E4E-A5FD-171C2CC59F54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TylerDM.StandardLibrary.Blazor", "TylerDM.StandardLibrary.Blazor\TylerDM.StandardLibrary.Blazor.csproj", "{EF626AF7-638C-4532-8CC9-7C32E5CC2BAC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DF2315A1-0178-491D-93C4-2A32528C504B}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		..\.github\workflows\on-main-merge-publish.yaml = ..\.github\workflows\on-main-merge-publish.yaml
+		..\.github\workflows\on-pr-test.yaml = ..\.github\workflows\on-pr-test.yaml
+		version.json = version.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{483F49F3-12E0-4E4E-A5FD-171C2CC59F54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{483F49F3-12E0-4E4E-A5FD-171C2CC59F54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{483F49F3-12E0-4E4E-A5FD-171C2CC59F54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{483F49F3-12E0-4E4E-A5FD-171C2CC59F54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF626AF7-638C-4532-8CC9-7C32E5CC2BAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF626AF7-638C-4532-8CC9-7C32E5CC2BAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF626AF7-638C-4532-8CC9-7C32E5CC2BAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF626AF7-638C-4532-8CC9-7C32E5CC2BAC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9DB15F13-C09E-4EB5-A1F5-E2AA2F483C01}
+	EndGlobalSection
+EndGlobal
