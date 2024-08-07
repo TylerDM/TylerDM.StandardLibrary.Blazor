@@ -1,2 +1,9 @@
 ﻿global using Microsoft.AspNetCore.Components;
+global using System;
 global using System.Web;
+global using Microsoft.AspNetCore.Components.Web;
+global using Microsoft.AspNetCore.Components.Rendering;
+global using Microsoft.Extensions.DependencyInjection;
+global using TylerDM.OrangePeel;
+global using Microsoft.JSInterop;
+global using System.Threading.Tasks;

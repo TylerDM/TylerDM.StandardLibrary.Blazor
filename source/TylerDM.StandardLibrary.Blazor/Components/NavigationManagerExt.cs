@@ -29,6 +29,28 @@ public static class NavigationManagerExt
 		return Guid.Parse(value);
 	}
 
+	public static void SetParameter(this NavigationManager nav, string key, string value)
+	{
+		var uri = nav.ToAbsoluteUri(nav.Uri);
+		var parameters = HttpUtility.ParseQueryString(new Uri(nav.Uri).Query);
+
+		parameters.Remove(key);
+		if (string.IsNullOrWhiteSpace(value) is false)
+			parameters.Add(key, value);
+
+		var url = uri.AbsolutePath;
+		url += '?';
+		foreach (var parameterKey in parameters.AllKeys)
+		{
+			var parameterValue = parameters[parameterKey];
+			url += $"{parameterKey}={parameterValue}&";
+		}
+
+		url = url[..^1];
+
+		nav.NavigateTo(url);
+	}
+
 	//public static void NavigateTo(this NavigationManager navigationManager, string endpoint, params IWebParameter[] parameters) =>
 	//	navigationManager.NavigateTo(UrlFactory.Create(endpoint, parameters));
 	#endregion
