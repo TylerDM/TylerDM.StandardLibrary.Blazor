@@ -11,16 +11,13 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run: 
-        working-directory: source
+        working-directory: source/TylerDM.StandardLibrary.Blazor
 
     steps:
       - name: Set up Dotnet.
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: "8.0.x"
-
-      - name: Install NBGV
-        run: dotnet tool install -g nbgv
 
       - name: Restore dependencies
         run: dotnet restore
