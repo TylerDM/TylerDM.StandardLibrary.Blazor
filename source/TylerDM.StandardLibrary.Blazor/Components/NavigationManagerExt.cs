@@ -51,7 +51,7 @@ public static class NavigationManagerExt
 		nav.NavigateTo(url);
 	}
 
-	//public static void NavigateTo(this NavigationManager navigationManager, string endpoint, params IWebParameter[] parameters) =>
-	//	navigationManager.NavigateTo(UrlFactory.Create(endpoint, parameters));
+	public static void NavigateTo(this NavigationManager navigationManager, string endpoint, params IWebParameter[] parameters) =>
+		navigationManager.NavigateTo(UrlFactory.Create(endpoint, parameters));
 	#endregion
 }
