@@ -16,4 +16,8 @@
 		<PackageReference Include="TylerDM.StandardLibrary.Web" Version="*" />
 	</ItemGroup>
 
+	<ItemGroup>
+		<SupportedPlatform Include="browser" />
+	</ItemGroup>
+
 </Project>
