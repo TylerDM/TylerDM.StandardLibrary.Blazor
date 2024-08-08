@@ -7,3 +7,4 @@ global using Microsoft.Extensions.DependencyInjection;
 global using TylerDM.OrangePeel;
 global using Microsoft.JSInterop;
 global using System.Threading.Tasks;
+global using TylerDM.StandardLibrary.Web.Parameters;
