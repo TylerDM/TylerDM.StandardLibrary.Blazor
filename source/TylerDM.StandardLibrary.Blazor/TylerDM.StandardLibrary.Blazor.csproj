@@ -2,10 +2,11 @@
 
   <PropertyGroup>
 		<IsPackable>true</IsPackable>
-		<Version>1.1.0</Version>
+		<Version>1.1.1</Version>
 		<RepositoryType>Git</RepositoryType>
 		<NeutralLanguage>en-US</NeutralLanguage>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
 	<ItemGroup>
@@ -14,6 +15,10 @@
 		<PackageReference Include="TylerDM.OrangePeel" Version="*" />
 		<PackageReference Include="TylerDM.StandardLibrary" Version="*" />
 		<PackageReference Include="TylerDM.StandardLibrary.Web" Version="*" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<SupportedPlatform Include="browser" />
 	</ItemGroup>
 
 </Project>
